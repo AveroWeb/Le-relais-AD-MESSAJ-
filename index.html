@@ -136,7 +136,7 @@
     text-align: center;
     padding: 120px 24px 80px;
     background:
-      linear-gradient(rgba(250, 247, 242, 0.55), rgba(250, 247, 242, 0.85)),
+      linear-gradient(rgba(30, 22, 15, 0.55), rgba(30, 22, 15, 0.7)),
       url('images/hero.jpg') center/cover no-repeat;
     position: relative;
   }
@@ -167,6 +167,29 @@
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  /* Hero overrides for dark background */
+  .hero h1 { color: #fff; }
+  .hero p { color: rgba(255, 255, 255, 0.92); }
+  .hero .hero-eyebrow { color: #e6c78a; }
+  .hero .btn {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+  .hero .btn:hover {
+    background: #fff;
+    color: var(--text);
+    border-color: #fff;
+  }
+  .hero .btn.btn-primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .hero .btn.btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    color: #fff;
   }
 
   .btn {
